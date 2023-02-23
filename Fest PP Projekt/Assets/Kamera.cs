@@ -10,6 +10,8 @@ public class Kamera : MonoBehaviour
 
     float rotacja_pionowa = 0f;
 
+    public MonitorInterakcja monitorSC;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -24,7 +26,10 @@ public class Kamera : MonoBehaviour
         rotacja_pionowa -= mysz_Y;
         rotacja_pionowa = Mathf.Clamp(rotacja_pionowa, -90f, 90f);
 
-        gracz.Rotate(Vector3.up * mysz_X);
-        kamera_gracza.transform.localRotation = Quaternion.Euler(rotacja_pionowa, 0f, 0f);
+        if(monitorSC.interakcja == false)
+        {
+            gracz.Rotate(Vector3.up * mysz_X);
+            kamera_gracza.transform.localRotation = Quaternion.Euler(rotacja_pionowa, 0f, 0f);
+        }
     }
 }
