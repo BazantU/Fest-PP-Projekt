@@ -11,6 +11,8 @@ public class Ruch : MonoBehaviour
 
     private Vector3 predkosc_spadania;
 
+    public MonitorInterakcja monitorSC;
+
     void Update()
     {
         float ruchX = Input.GetAxis("Horizontal");
@@ -27,8 +29,12 @@ public class Ruch : MonoBehaviour
         }
         
         Vector3 ruch = transform.right * ruchX + transform.forward * ruchZ;
-        controller.Move(ruch * predkosc_ruchu * Time.deltaTime);
 
+        if(monitorSC.interakcja == false)
+        {
+            controller.Move(ruch * predkosc_ruchu * Time.deltaTime);
+        }
+            
         predkosc_spadania.y += sila_grawitacji * Time.deltaTime;
         controller.Move(predkosc_spadania * Time.deltaTime);
     }

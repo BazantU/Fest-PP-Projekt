@@ -6,9 +6,8 @@ public class Itemy : MonoBehaviour
 {   
     public Camera kamera_gracza;
     public Transform reka_gracza;
+    private List<GameObject> przedmioty_lista = new List<GameObject>(); 
     public float odleglosc;
-
-    private List<GameObject> przedmioty_lista = new List<GameObject>();
     private bool trzyma_przedmiot = false;
 
     void Update()
@@ -17,7 +16,7 @@ public class Itemy : MonoBehaviour
         RaycastHit hit;
 
         if(Physics.Raycast(ray, out hit) 
-            && hit.transform.tag == "Item" 
+            && hit.transform.tag == "Item"
             && hit.transform.GetComponent<Outline>() != null
             && hit.distance <= odleglosc)
         {   
@@ -27,16 +26,6 @@ public class Itemy : MonoBehaviour
             if (!przedmioty_lista.Contains(przedmiot.gameObject))
             {
                 przedmioty_lista.Add(przedmiot.gameObject);
-            }
-        }
-
-        for (int i = 0; i < przedmioty_lista.Count; i++)
-        {
-            var obiekt = przedmioty_lista[i];
-            if(obiekt.transform.GetComponent<Outline>() != null && Physics.Raycast(ray, out hit) && obiekt != hit.transform.gameObject)
-            {
-                obiekt.transform.GetComponent<Outline>().enabled = false;           
-                przedmioty_lista.Remove(obiekt);
             }
         }
 
@@ -75,6 +64,16 @@ public class Itemy : MonoBehaviour
 
                     trzyma_przedmiot = false;
                 }
+            }
+        }
+
+        for (int i = 0; i < przedmioty_lista.Count; i++)
+        {
+            var obiekt = przedmioty_lista[i];
+            if(obiekt.transform.GetComponent<Outline>() != null && Physics.Raycast(ray, out hit) && obiekt != hit.transform.gameObject)
+            {
+                obiekt.transform.GetComponent<Outline>().enabled = false;           
+                przedmioty_lista.Remove(obiekt);
             }
         }
     }

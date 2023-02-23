@@ -321,9 +321,15 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
+<<<<<<< HEAD
 -r:"C:/Users/janpo/Documents/GitHub/Fest-PP-Projekt/Fest PP Projekt/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
 -r:"C:/Users/janpo/Documents/GitHub/Fest-PP-Projekt/Fest PP Projekt/Library/PackageCache/com.unity.testtools.codecoverage@1.2.2/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"C:/Users/janpo/Documents/GitHub/Fest-PP-Projekt/Fest PP Projekt/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+=======
+-r:"C:/Users/Mateusz/Documents/GitHub/Fest-PP-Projekt/Fest PP Projekt/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"C:/Users/Mateusz/Documents/GitHub/Fest-PP-Projekt/Fest PP Projekt/Library/PackageCache/com.unity.testtools.codecoverage@1.2.2/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"C:/Users/Mateusz/Documents/GitHub/Fest-PP-Projekt/Fest PP Projekt/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+>>>>>>> b714e85ec28fad3be02b006960446e4fa4e53055
 -r:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-firstpass.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
@@ -354,6 +360,8 @@
 "Assets/Itemy.cs"
 "Assets/Kamera.cs"
 "Assets/Kod_1.cs"
+"Assets/MonitorInterakcja.cs"
+"Assets/Outline_Inne.cs"
 "Assets/QuickOutline/Scripts/Outline.cs"
 "Assets/Ruch.cs"
 -langversion:9.0

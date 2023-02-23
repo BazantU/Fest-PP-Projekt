@@ -83,7 +83,7 @@ public class Kod_1 : MonoBehaviour
                         DOTween.Init();
                         tlo.DOColor(Color.green, 0.5f);
                         DOTween.Init();
-                        zawias.DOLocalRotate(new Vector3(0f, -155f, 0), 2f);
+                        zawias.DOLocalRotate(new Vector3(0f, 125f, 0), 2f);
                     }
                     else
                     {
