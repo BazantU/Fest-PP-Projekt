@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Item
   - Przycisk_Kod
+  - Monitor
+  - Kod
   layers:
   - Default
   - TransparentFX

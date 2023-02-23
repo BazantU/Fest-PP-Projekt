@@ -28,7 +28,7 @@ public class Ruch : MonoBehaviour
         
         Vector3 ruch = transform.right * ruchX + transform.forward * ruchZ;
         controller.Move(ruch * predkosc_ruchu * Time.deltaTime);
-
+            
         predkosc_spadania.y += sila_grawitacji * Time.deltaTime;
         controller.Move(predkosc_spadania * Time.deltaTime);
     }
