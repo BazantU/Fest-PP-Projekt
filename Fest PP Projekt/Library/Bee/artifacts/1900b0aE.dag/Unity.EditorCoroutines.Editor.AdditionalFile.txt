@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-C:\Users\janpo\Documents\GitHub\Fest-PP-Projekt\Fest PP Projekt
-=======
 C:\Users\Mateusz\Documents\GitHub\Fest-PP-Projekt\Fest PP Projekt
->>>>>>> b714e85ec28fad3be02b006960446e4fa4e53055
