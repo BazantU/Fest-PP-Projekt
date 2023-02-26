@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 45
+  controlID: 17
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 54
+  controlID: 71
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -313,7 +313,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -403,23 +403,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d45b0000
-      m_LastClickedID: 23508
-      m_ExpandedIDs: 3ccbffffece4ffff92eafffffcf9ffff38fbffffc45a0000705b0000805d0000ca5d0000dc5d0000045e00001a600000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 36deffff9af4ffff226300000864000064640000a4660000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Light
-        m_OriginalName: Light
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -1566
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 2}
       m_SearchString: 
@@ -687,9 +687,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 40.03711, y: 9.483172, z: -27.981422}
+    m_Target: {x: 22.737106, y: 7.7260695, z: -41.865314}
     speed: 2
-    m_Value: {x: 40.03711, y: 9.483172, z: -27.981422}
+    m_Value: {x: 22.737106, y: 7.7260695, z: -41.865314}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -715,7 +715,7 @@ MonoBehaviour:
         m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 1, y: 1}
+      m_Size: {x: 0.25, y: 0.25}
     yGrid:
       m_Fade:
         m_Target: 0
@@ -736,9 +736,9 @@ MonoBehaviour:
     m_GridAxis: 0
     m_gridOpacity: 0
   m_Rotation:
-    m_Target: {x: 0.0009394409, y: 0.9970332, z: 0.008956423, w: -0.07810594}
+    m_Target: {x: -0.0815462, y: 0.8699433, z: -0.15441325, w: -0.46149284}
     speed: 2
-    m_Value: {x: 0.00068724697, y: 0.9971574, z: 0.0059666014, w: -0.07510726}
+    m_Value: {x: -0.081302136, y: 0.8686679, z: -0.15284412, w: -0.46416032}
   m_Size:
     m_Target: 3.459994
     speed: 2
@@ -808,22 +808,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/Models
+  - Assets
   m_LastFoldersGridSize: 57
-  m_LastProjectPath: C:\Users\janpo\Documents\GitHub\Fest-PP-Projekt\Fest PP Projekt
+  m_LastProjectPath: C:\Users\Mateusz\Documents\GitHub\Fest-PP-Projekt\Fest PP Projekt
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: 36650000
-    m_LastClickedID: 25910
-    m_ExpandedIDs: 0000000034650000366500005865000000ca9a3bffffff7f
+    m_SelectedIDs: a6680000
+    m_LastClickedID: 26790
+    m_ExpandedIDs: 00000000a6680000a8680000aa68000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -851,7 +851,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003465000036650000
+    m_ExpandedIDs: 00000000a6680000a8680000aa680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
