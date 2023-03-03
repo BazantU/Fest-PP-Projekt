@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class MonitorInterakcja : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class MonitorInterakcja : MonoBehaviour
     public string kod_dostepu;
     public bool mozna_pisac = true;
 
+    public RawImage strona_img;
+
     void Start()
     {   
         kod_dostepu = kod_dostepu.ToUpper();
@@ -39,8 +42,7 @@ public class MonitorInterakcja : MonoBehaviour
             && hit.transform.tag == "Monitor"
             && hit.transform.GetComponent<Outline>() != null
             && hit.distance <= odleglosc
-            && interakcja == false
-            && mozna_pisac == true)
+            && interakcja == false)
         {   
             interakcja = true;
             var item = hit.transform;
@@ -60,7 +62,7 @@ public class MonitorInterakcja : MonoBehaviour
         {   
             foreach(KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
             {   
-                if(Input.GetKeyDown(vKey))
+                if(Input.GetKeyDown(vKey) && mozna_pisac == true)
                 {   
                     //print(vKey);
                     string n = vKey.ToString();
@@ -122,8 +124,9 @@ public class MonitorInterakcja : MonoBehaviour
                         if(kod == kod_dostepu)
                         {
                             mozna_pisac = false;
-                            kamera_glowna.SetActive(true); kamera_monitor.SetActive(false);
-                            interakcja = false;
+                            strona_img.enabled = true;
+                            //kamera_glowna.SetActive(true); kamera_monitor.SetActive(false);
+                            //interakcja = false;
                         }
                         else
                         {

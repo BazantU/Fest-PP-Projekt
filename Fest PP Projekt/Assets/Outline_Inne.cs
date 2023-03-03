@@ -23,8 +23,7 @@ public class Outline_Inne : MonoBehaviour
             
             //Monitor
             if(przedmiot.tag == "Monitor"
-                && monitorSC.interakcja == false
-                && monitorSC.mozna_pisac == true)
+                && monitorSC.interakcja == false)
             {
                 przedmiot.GetComponent<Outline>().enabled = true;
                 if (!przedmioty_lista.Contains(przedmiot.gameObject))
