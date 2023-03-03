@@ -1,5 +1,4 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-
 ,{ "pid":12345, "tid":0, "ts":1677868172078213, "dur":780, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1677868172079001, "dur":387, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
 ,{ "pid":12345, "tid":0, "ts":1677868172079460, "dur":43, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
