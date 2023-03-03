@@ -11,6 +11,7 @@ public class Kamera : MonoBehaviour
     float rotacja_pionowa = 0f;
 
     public MonitorInterakcja monitorSC;
+    public CRTInterakcja monitorCRT;
 
     void Start()
     {
@@ -26,7 +27,8 @@ public class Kamera : MonoBehaviour
         rotacja_pionowa -= mysz_Y;
         rotacja_pionowa = Mathf.Clamp(rotacja_pionowa, -90f, 90f);
 
-        if(monitorSC.interakcja == false)
+        if(monitorSC.interakcja == false
+        && monitorCRT.interakcja == false)
         {
             gracz.Rotate(Vector3.up * mysz_X);
             kamera_gracza.transform.localRotation = Quaternion.Euler(rotacja_pionowa, 0f, 0f);

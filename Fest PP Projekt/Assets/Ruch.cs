@@ -12,6 +12,7 @@ public class Ruch : MonoBehaviour
     private Vector3 predkosc_spadania;
 
     public MonitorInterakcja monitorSC;
+    public CRTInterakcja monitorCRT;
 
     void Update()
     {
@@ -30,7 +31,8 @@ public class Ruch : MonoBehaviour
         
         Vector3 ruch = transform.right * ruchX + transform.forward * ruchZ;
 
-        if(monitorSC.interakcja == false)
+        if(monitorSC.interakcja == false 
+        && monitorCRT.interakcja == false)
         {
             controller.Move(ruch * predkosc_ruchu * Time.deltaTime);
         }
