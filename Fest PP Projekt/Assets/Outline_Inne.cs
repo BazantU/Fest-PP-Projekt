@@ -9,6 +9,7 @@ public class Outline_Inne : MonoBehaviour
     public float odleglosc;
 
     public MonitorInterakcja monitorSC;
+    public CRTInterakcja monitorCRT;
 
     void Update()
     {   
@@ -24,6 +25,17 @@ public class Outline_Inne : MonoBehaviour
             //Monitor
             if(przedmiot.tag == "Monitor"
                 && monitorSC.interakcja == false)
+            {
+                przedmiot.GetComponent<Outline>().enabled = true;
+                if (!przedmioty_lista.Contains(przedmiot.gameObject))
+                {
+                    przedmioty_lista.Add(przedmiot.gameObject);
+                }
+            }
+
+            //CRT
+            if(przedmiot.tag == "CRT"
+                && monitorCRT.interakcja == false)
             {
                 przedmiot.GetComponent<Outline>().enabled = true;
                 if (!przedmioty_lista.Contains(przedmiot.gameObject))

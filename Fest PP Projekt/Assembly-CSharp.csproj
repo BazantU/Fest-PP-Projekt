@@ -43,6 +43,7 @@
      <Compile Include="Assets\MonitorInterakcja.cs" />
      <Compile Include="Assets\Ruch.cs" />
      <Compile Include="Assets\Outline_Inne.cs" />
+     <Compile Include="Assets\CRTInterakcja.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
